@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 82px;
+  padding-bottom: 90px;
+  text-align: center;
+
+  @include media-from(991) {
+    padding-top: 114px;
+    padding-bottom: 123px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 275px;
+  }
+
+  &__list {
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 342px;
+
+    @include media-from(991) {
+      margin-top: 86px;
+    }
+  }
+
+  &__citation {
+    @include font-text-primary;
+
+    color: $color-grey-primary;
+  }
+}

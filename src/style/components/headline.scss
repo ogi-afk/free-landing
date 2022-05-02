@@ -1,0 +1,17 @@
+.headline {
+  &__title {
+    @include font-title-h1;
+
+    font-weight: 400;
+
+    &--h2 {
+      @include font-title-h2;
+    }
+  }
+
+  &__text {
+    @include font-text-primary;
+
+    font-weight: 400;
+  }
+}

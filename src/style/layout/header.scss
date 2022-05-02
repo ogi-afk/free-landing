@@ -1,0 +1,47 @@
+.header {
+  padding-top: 68px;
+
+  @include media-from(1440) {
+    padding-top: 34px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+
+    @include media-from(768) {
+      display: block;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @include media-from(768) {
+      display: block;
+      border-bottom: 1px solid $color-grey-primary;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__list {
+    @include font-text-primary;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrap {
+    @include media-from(768) {
+      display: none;
+    }
+  }
+
+  &__line {
+    content: "";
+    display: block;
+    background-color: $color-black-secondary;
+    width: 33px;
+    height: 3.84px;
+  }
+}

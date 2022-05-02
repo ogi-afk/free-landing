@@ -1,0 +1,38 @@
+$font-family: "Roboto", sans-serif;
+
+$font-size-text-base: 18px;
+$font-size-title-h1: 47px;
+$font-size-title-h2: 34px;
+$font-size-title-h3: 14px;
+$font-size-text-secondary: 16px;
+
+$line-height-text-base: 21px;
+$line-height-title-h1: 55px;
+$line-height-title-h2: 40px;
+$line-height-title-h3: 16px;
+$line-height-text-secondary: 19px;
+
+@mixin font-text-primary {
+  font-size: $font-size-text-base;
+  line-height: $line-height-text-base;
+}
+
+@mixin font-title-h1 {
+  font-size: $font-size-title-h1;
+  line-height: $line-height-title-h1;
+}
+
+@mixin font-title-h2 {
+  font-size: $font-size-title-h2;
+  line-height: $line-height-title-h2;
+}
+
+@mixin font-title-h3 {
+  font-size: $font-size-title-h3;
+  line-height: $line-height-title-h3;
+}
+
+@mixin font-text-secondary {
+  font-size: $font-size-text-secondary;
+  line-height: $line-height-text-secondary;
+}
